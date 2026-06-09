@@ -1,4 +1,5 @@
 # zoilerplate
+A stupidly named boilerplate for dotnet/react preferring developers.
 
 ## Goals
 - .NET 10 with C#
