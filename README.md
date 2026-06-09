@@ -9,5 +9,5 @@ A stupidly named boilerplate for dotnet/react preferring developers.
 - React 
 - `esbuild`
 - SCSS with PostCSS
-- TailwindCSS?
+- TailwindCSS
 - Complete authentication handling, with roles (admin, user)
