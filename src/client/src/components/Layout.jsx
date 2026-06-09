@@ -10,7 +10,9 @@ export default function Layout ({ children }) {
                 {children}
             </main>
             <footer id="footer_main">
-                &copy; 2024 zoilerplate. All rights reserved.
+                <section class="p-4 text-center text-sm">
+                    <p>&copy; {new Date().getFullYear()} zoilerplate. All rights reserved.</p>
+                </section>
             </footer>
         </div>
     );
