@@ -1,4 +1,4 @@
-# oilerplate
+# zoilerplate
 
 ## Goals
 - .NET 10 with C#
