@@ -10,4 +10,7 @@ A stupidly named boilerplate for dotnet/react preferring developers.
 - `esbuild`
 - SCSS with PostCSS
 - TailwindCSS
-- Complete authentication handling, with roles (admin, user)
+- Goal: Complete authentication handling, with roles (admin, user)
+    - OAuth with Google login
+    - Regular user authentication, complete with email
+
