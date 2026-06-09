@@ -4,15 +4,12 @@ import NavMenu from './NavMenu';
 
 export default function Layout ({ children }) {
     return (
-        <div className="flex flex-col min-h-screen">
-            <header>
-                <NavMenu />
-                {/* NavMenu component will go here */}
-            </header>
-            <main className="flex-grow">
+        <div className="relative min-h-screen flex flex-col">
+            <NavMenu />
+            <main>
                 {children}
             </main>
-            <footer className="bg-gray-800 text-white p-4 text-center">
+            <footer id="footer_main">
                 &copy; 2024 zoilerplate. All rights reserved.
             </footer>
         </div>

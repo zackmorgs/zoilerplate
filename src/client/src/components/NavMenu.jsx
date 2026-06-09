@@ -1,13 +1,40 @@
-import React from 'react';
+import React, { useState } from "react";
+
+import { Link } from "react-router";
+
+import navItems from "../data/navItems";
 
 export default function NavMenu() {
-    return (
-        <nav id="nav_menu" className="w-full">
-            <ul className="flex space-x-4">
-                <li><a href="/" className="hover:text-gray-400">Home</a></li>
-                <li><a href="/about" className="hover:text-gray-400">About</a></li>
-                <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
-            </ul>
-        </nav>
-    );
-}   
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  return (
+    <nav id="nav_menu" className="sticky w-full top-0 bg-white shadow z-10">
+      <div class="nav-bar flex flex-row justify-between items-center p-4">
+        <div class="nav-logo">
+          <Link to="/" id="nav_logo_link">
+            zoilerplate
+          </Link>
+        </div>
+        <button id="nav_toggle" aria-label="Toggle navigation menu" onClick={handleNavToggle}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul className={`nav-list flex flex-col list-none m-0 p-0 ${isOpen ? "" : "hidden"}`}>
+        {navItems.map((item) => (
+          <li key={item.path} className="nav-item block">
+            <Link to={item.path} className="nav-link py-2 px-4 block ">
+              {item.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}

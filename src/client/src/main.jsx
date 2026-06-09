@@ -1,15 +1,15 @@
-import './styles/tailwind.css';
-import './styles/app.scss';
+import "./styles/tailwind.css";
+import "./styles/app.scss";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+        <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
