@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout>
-      <header className="p-4 text-center">
+      <header className="p-4 text-center h-screen flex flex-col justify-center items-center">
         <h1 className="text-4xl font-semibold">zoilerplate</h1>
         <p className="mt-4 text-lg text-gray-600">
           A full-stack boilerplate for modern web applications.
