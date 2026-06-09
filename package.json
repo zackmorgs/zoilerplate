@@ -4,10 +4,16 @@
   "description": "- .NET 10 with C# - MongoDb - SCSS with PostCSS - TailwindCSS? - Complete authentication handling, with roles (admin, user)",
   "main": "index.js",
   "scripts": {
-    "dev": ""
+    "dev": "concurrently --names \"client,server\" -c \"cyan,green\" \"npm run dev --prefix src/client\" \"dotnet watch --project src/server/Host\"",
+    "build": "npm run build --prefix src/client",
+    "build:client": "npm run build --prefix src/client",
+    "server": "dotnet run --project src/server/Host"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
 }

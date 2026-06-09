@@ -27,9 +27,14 @@ yarn-error.log*
 *.user
 *.suo
 
+# Global tools and local packages
+/node_modules/
+/.nuget/
+
+
 # Frontend dependencies and build output
-src/client/node_modules/
-src/client/dist/
+/src/client/node_modules/
+/src/client/dist/
 /dist/
 src/server/Host/wwwroot/*
 !src/server/Host/wwwroot/.gitkeep
