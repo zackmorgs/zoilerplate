@@ -14,3 +14,8 @@ A ~~stupidly~~ incredibly well-named boilerplate for dotnet/react preferring dev
     - OAuth with Google login
     - Regular user authentication, complete with email
 
+## Get Started
+1. clone this repository.
+2. from its root directory run `chmod +x ./scripts/install.sh`
+3. then run `./scripts/install.sh` to install the repo's dependencies (that aren't dotnet 11 and node)
+    - lataest lte version of `dotnet` 10 and `node` v24.14.1 must be installed.1
