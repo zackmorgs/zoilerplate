@@ -1,10 +1,9 @@
 import React from 'react';
-
 import NavMenu from './NavMenu';
 
-export default function Layout ({ children }) {
+export default function Layout({ children }) {
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div className="relative flex flex-col">
             <NavMenu />
             <main>
                 {children}
@@ -16,4 +15,4 @@ export default function Layout ({ children }) {
             </footer>
         </div>
     );
-}   
+}

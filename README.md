@@ -1,5 +1,5 @@
 # zoilerplate
-A stupidly named boilerplate for dotnet/react preferring developers.
+A ~~stupidly~~ incredibly well-named boilerplate for dotnet/react preferring developers.
 
 <img src="https://github.com/zackmorgs/zoilerplate/blob/main/design/screenshot-main.png?raw=true" width="320px"/>
 
