@@ -3,7 +3,7 @@ import NavMenu from './NavMenu';
 
 export default function Layout({ children }) {
     return (
-        <div className="relative flex flex-col">
+        <div className="relative">
             <NavMenu />
             <main>
                 {children}

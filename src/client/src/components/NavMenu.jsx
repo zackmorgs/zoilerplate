@@ -14,8 +14,8 @@ export default function NavMenu() {
 
   return (
     <nav id="nav_menu" className={`sticky w-full top-0 bg-white shadow z-10${isOpen ? " nav-open" : ""}`}>
-      <div class="nav-bar flex flex-row justify-between items-center p-4">
-        <div class="nav-logo">
+      <div className="nav-bar flex flex-row justify-between items-center p-4">
+        <div className="nav-logo">
           <Link to="/" id="nav_logo_link">
             zoilerplate
           </Link>
